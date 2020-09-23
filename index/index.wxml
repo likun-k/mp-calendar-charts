@@ -1,0 +1,14 @@
+<text class="title">近3个月</text>
+<view class="contribution-box">
+
+    <view class="left-side">
+        <view class="box">周一</view>
+        <view class="box">周四</view>
+        <view class="box">周日</view>
+    </view>
+    <view class="right-side" >
+        <view wx:for="{{days}}" wx:key="item" class="box {{item.num==0?'no':item.num==1?'little':'more'}}" 
+            data-content="{{item.num}}" data-date="{{item.date}}" >
+        </view>
+    </view>
+</view>
